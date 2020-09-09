@@ -3,6 +3,6 @@ describe('Google\'s Search Functionality', () => {
       browser.url('https://www.google.com/ncr');
       $('[name="q"]').setValue('BrowserStack');
       $('[name="btnK"]').click();
-      browser.getTitle().should.match(/BrowserStack - Google Search/i);
+      browser.getTitle().should.match(/BrowserStack - Google Search 1/i);
   });
 });
