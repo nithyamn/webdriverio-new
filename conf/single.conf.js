@@ -23,6 +23,13 @@ exports.config = {
   connectionRetryCount: 3,
   host: 'hub.browserstack.com',
 
+  reporters: [
+        ['junit', {
+            outputDir: './test-reports'
+        }]
+    ],
+
+
   before: function () {
     var chai = require('chai');
     global.expect = chai.expect;

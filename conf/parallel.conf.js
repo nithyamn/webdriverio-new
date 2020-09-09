@@ -32,6 +32,13 @@ exports.config = {
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   host: 'hub.browserstack.com',
+
+  reporters: [
+        ['junit', {
+            outputDir: './test-reports'
+        }]
+    ],
+
   
   before: function () {
     var chai = require('chai');
