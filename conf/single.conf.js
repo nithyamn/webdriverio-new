@@ -25,7 +25,7 @@ exports.config = {
 
   reporters: [
         ['junit', {
-            outputDir: './'
+            outputDir: '**/test-reports/'
         }]
     ],
 
