@@ -24,8 +24,12 @@ exports.config = {
   host: 'hub.browserstack.com',
 
   reporters: [
+        'dot',
         ['junit', {
-            outputDir: './'
+            outputDir: './test-reports',
+            outputFileFormat: function(options) { // optional
+                return `results-${options.cid}.${options.capabilities}.xml`
+            }
         }]
     ],
 
